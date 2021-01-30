@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FAIR | Personal Homepage of Alex Peltzer</title>
+    <link>https://apeltzer.github.io/tag/fair/</link>
+      <atom:link href="https://apeltzer.github.io/tag/fair/index.xml" rel="self" type="application/rss+xml" />
+    <description>FAIR</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2021</copyright><lastBuildDate>Thu, 13 Feb 2020 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>FAIR</title>
+      <link>https://apeltzer.github.io/tag/fair/</link>
+    </image>
+    
+    <item>
+      <title>The nf-core framework for community-curated bioinformatics pipelines</title>
+      <link>https://apeltzer.github.io/publication/14-nfcore/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://apeltzer.github.io/publication/14-nfcore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MHCquant: Automated and reproducible data analysis for immunopeptidomics</title>
+      <link>https://apeltzer.github.io/publication/11-mhcquant/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/publication/11-mhcquant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Challenges of big data integration in the life sciences</title>
+      <link>https://apeltzer.github.io/publication/10-bigdata/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/publication/10-bigdata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nf-core: Community curated bioinformatics pipelines</title>
+      <link>https://apeltzer.github.io/publication/09-nfcore/</link>
+      <pubDate>Tue, 16 Apr 2019 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/publication/09-nfcore/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

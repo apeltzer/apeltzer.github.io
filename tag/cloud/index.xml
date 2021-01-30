@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud | Personal Homepage of Alex Peltzer</title>
+    <link>https://apeltzer.github.io/tag/cloud/</link>
+      <atom:link href="https://apeltzer.github.io/tag/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <description>Cloud</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2021</copyright><lastBuildDate>Wed, 02 Sep 2020 15:30:00 +0200</lastBuildDate>
+    <image>
+      <url>https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Cloud</title>
+      <link>https://apeltzer.github.io/tag/cloud/</link>
+    </image>
+    
+    <item>
+      <title>Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</title>
+      <link>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</link>
+      <pubDate>Wed, 02 Sep 2020 15:30:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</title>
+      <link>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</link>
+      <pubDate>Fri, 03 Apr 2020 09:30:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</title>
+      <link>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</link>
+      <pubDate>Tue, 14 Jan 2020 09:30:00 +0100</pubDate>
+      <guid>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Migrating legacy workflows to Nextflow</title>
+      <link>https://apeltzer.github.io/talk/migrating-legacy-workflows-to-nextflow/</link>
+      <pubDate>Thu, 19 Sep 2019 09:45:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/migrating-legacy-workflows-to-nextflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BigData analytics with Nextflow and nf-core</title>
+      <link>https://apeltzer.github.io/talk/bigdata-analytics-with-nextflow-and-nf-core/</link>
+      <pubDate>Tue, 03 Sep 2019 11:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/bigdata-analytics-with-nextflow-and-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nf-core: Community built bioinformatics pipelines</title>
+      <link>https://apeltzer.github.io/talk/nf-core-community-built-bioinformatics-pipelines/</link>
+      <pubDate>Fri, 26 Jul 2019 09:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/nf-core-community-built-bioinformatics-pipelines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nf-core: Community built bioinformatics pipelines</title>
+      <link>https://apeltzer.github.io/talk/nf-core-community-built-bioinformatics-pipelines/</link>
+      <pubDate>Thu, 25 Jul 2019 14:20:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/nf-core-community-built-bioinformatics-pipelines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BigData Analytics with Nextflow &amp; nf-core</title>
+      <link>https://apeltzer.github.io/talk/bigdata-analytics-with-nextflow-nf-core/</link>
+      <pubDate>Sat, 06 Jul 2019 11:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/bigdata-analytics-with-nextflow-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Complex Genomics Analysis Pipelines made Simple with NextFlow &amp; AWS Batch</title>
+      <link>https://apeltzer.github.io/talk/complex-genomics-analysis-pipelines-made-simple-with-nextflow-aws-batch/</link>
+      <pubDate>Wed, 27 Feb 2019 15:00:00 +0100</pubDate>
+      <guid>https://apeltzer.github.io/talk/complex-genomics-analysis-pipelines-made-simple-with-nextflow-aws-batch/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

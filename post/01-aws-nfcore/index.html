@@ -1,0 +1,1360 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.2 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="How to run AWSBatch with NF-Core pipelines using Nextflow.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://apeltzer.github.io/post/01-aws-nfcore/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#1565c0">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.33319bbe33e1b9feff835521b777a249.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  
+  <link rel="manifest" href="/index.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://apeltzer.github.io/post/01-aws-nfcore/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Personal Homepage of Alex Peltzer">
+  <meta property="og:url" content="https://apeltzer.github.io/post/01-aws-nfcore/">
+  <meta property="og:title" content="Running nf-co.re pipelines with AWSBatch | Personal Homepage of Alex Peltzer">
+  <meta property="og:description" content="How to run AWSBatch with NF-Core pipelines using Nextflow."><meta property="og:image" content="https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2018-08-21T00:00:00&#43;02:00">
+    
+    <meta property="article:modified_time" content="2018-08-22T22:15:00&#43;02:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://apeltzer.github.io/post/01-aws-nfcore/"
+  },
+  "headline": "Running nf-co.re pipelines with AWSBatch",
+  
+  "datePublished": "2018-08-21T00:00:00+02:00",
+  "dateModified": "2018-08-22T22:15:00+02:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Alexander Peltzer"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Personal Homepage of Alex Peltzer",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "How to run AWSBatch with NF-Core pipelines using Nextflow."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Running nf-co.re pipelines with AWSBatch | Personal Homepage of Alex Peltzer</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.d876f1a6b98701f9238f2313b512a26f.js"></script>
+
+  
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Personal Homepage of Alex Peltzer</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Personal Homepage of Alex Peltzer</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Running nf-co.re pipelines with AWSBatch</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      Alexander Peltzer</span>, <span >
+      Tobias Koch</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Aug 22, 2018
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    7 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>This document is based on experiences provided by <a href="https://maxulysse.github.io/2017/11/16/Running-CAW-with-AWS-Batch/" target="_blank" rel="noopener">Maxime Garcia</a> at his blogpost on running CAW with AWSBatch and our own experiences. We just wanted to acknowledge the effort that Maxime also put into making this work!</p>
+<h2 id="basic-requirements">Basic Requirements</h2>
+<p>In order to run this, you need to have a <a href="https://www.google.com/url?q=http://aws.amazon.com&amp;sa=D&amp;ust=1534850604063000" target="_blank" rel="noopener">AWS
+account</a> set up and create an IAM user for it. More detailed information on how to do this can be found under the above link. The IAM set up is described in the <a href="#h.iamsetup">next section</a>.</p>
+<h3 id="iam-user-setuphiamsetup"><a href="#h.iamsetup">IAM User setup</a></h3>
+<p>Please follow the instructions on AWS to set up an IAM user for running
+Batch jobs on AWSBatch. This user has to be provided with the required
+permissions to run Batch jobs. Permissions on AWS are set up using <a href="https://www.google.com/url?q=https://console.aws.amazon.com/iam&amp;sa=D&amp;ust=1534850604070000" target="_blank" rel="noopener">the IAM service</a> and you have to start by creating a new user using the &ldquo;Add user&rdquo; interface. Please attach the following permissions to your newly created user afterwards:</p>
+<ul>
+<li><code>AmazonEC2FullAccess</code></li>
+<li><code>AmazonS3FullAccess</code></li>
+<li><code>AWSBatchFullAccess</code></li>
+</ul>
+<p>This should already suffice in terms of user permissions to run jobs on
+AWS Batch.</p>
+<h3 id="service-role-setuphservicerolesetup"><a href="#h.servicerolesetup">Service role setup</a></h3>
+<p>Next, we need to set up permissions for AWS Batch to e.g. run/stop EC2
+instances for us by generating the required roles on IAM. These are
+managed as separate roles in IAM under &ldquo;Roles&rdquo;. Some of these are
+created automatically for you when you set up a Batch job at the first
+time, but we can make sure that these are already present and configured
+properly beforehand.</p>
+<p>You need the service roles:</p>
+<ul>
+<li><code>AWSBatchServiceRole</code></li>
+<li><code>ecsInstanceRole</code></li>
+<li><code>AWSServiceRoleForEC2SpotFleet</code></li>
+<li><code>AmazonEC2SpotFleetRole</code></li>
+</ul>
+<p>The latter two are not required if you are not intending to use spot
+instances (you should use them to save money!).</p>
+<h4 id="awsbatchservicerole">AWSBatchServiceRole</h4>
+<p>This role should have the policy <code>AWSBatchServiceRole</code> attached.
+<img src="https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image7.png" alt=""></p>
+<h4 id="ecsinstancerole">ecsInstanceRole</h4>
+<p>This role should have the policies <code>AmazonS3FullAccess</code> and
+<code>AmazonEC2ContainerServiceforEC2Role</code> set.</p>
+<p><img src="https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image1.png" alt=""></p>
+<h4 id="awsserviceroleforec2spotfleet">AWSServiceRoleForEC2SpotFleet</h4>
+<p>This role should have the policy <code>AWSEC2SpotFleetServiceRolePolicy</code>
+set.</p>
+<p><img src="https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image6.png" alt=""></p>
+<h4 id="amazonec2spotfleetrole">AmazonEC2SpotFleetRole</h4>
+<p>This role should have the policies <code>AmazonEC2SpotFleetRole</code> and
+<code>AmazonEC2SpotFleetTaggingRole</code> set accordingly.</p>
+<p><img src="https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image8.png" alt=""></p>
+<p>Once you have set these roles, the permissions for running a job with
+the selected IAM user can be used to configure a compute environment
+(CE) and a job queue to run your jobs.</p>
+<p>You need to get the accesskey/token combination for using AWS and need
+to have these present on the machine starting the jobs in a file
+<code>~/.aws/credentials</code> such as:</p>
+<pre><code class="language-bash">[default]
+aws_access_key_id = KEY
+aws_secret_access_key = secretKEY
+</code></pre>
+<h2 id="ami">AMI</h2>
+<p>Now that you have all the permissions set up you need to create a
+custom amazon machine image (AMI). This will be used later by the EC2
+instances started by AWS batch.</p>
+<h3 id="ami-preparation">AMI preparation</h3>
+<p>First you have to set up an EC2 instance which will later be converted
+into an AMI. Please use the ECS-Optimized Amazon Linux AMI since it
+provides docker installation and configuration.</p>
+<p><img src="https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image3.png" alt=""></p>
+<p>Choose a t2.micro instance for the instance type since the instance
+type does not impact the AMI.</p>
+<p><img src="https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image4.png" alt=""></p>
+<p>Configuration of the Instance Details is not needed as the default
+configuration should suffice.</p>
+<p><img src="https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image9.png" alt=""></p>
+<p>Depending on the docker image sizes you expect your Batch instances to
+handle, choose a larger EBS storage in the storage configuration.</p>
+<p><img src="https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image5.png" alt=""></p>
+<p>Optional Tags can be added in Step 5.</p>
+<p><img src="https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image2.png" alt=""></p>
+<p>In the last step configure your Security Group. Make sure you can
+connect to the EC2 instance when doing so. You can also let AWS create a
+security group for you.Now launch the instance.</p>
+<p>Connect to your t2.micro instance and perform the following
+steps:</p>
+<ul>
+<li>Update the yum repository</li>
+<li><code>sudo yum update</code></li>
+<li>Check the docker configuration and make sure the docker storage size matches your configured one.</li>
+<li><code>docker info</code></li>
+<li>Check whether awscli is installed</li>
+<li><code>aws --version</code></li>
+<li>Install awscli using miniconda</li>
+</ul>
+<pre><code class="language-bash">wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86\_64.sh
+bash Miniconda3-latest-Linux-x86\_64.sh -p /home/ec2-user/miniconda
+/home/ec2-user/miniconda/bin/conda install -c conda-forge awscli
+/home/ec2-user/miniconda/bin/aws --version
+</code></pre>
+<h3 id="ami-creation">AMI creation</h3>
+<p>Now that you have configured your EC2 instance you can logout and stop
+the instance.</p>
+<p>In the EC2 Management Console select the stopped instance and choose
+the Action Image-&gt;Create Image</p>
+<p>Choose a name and a description and create the AMI.</p>
+<h2 id="set-up-queue--compute-environment">Set up QUEUE / Compute Environment</h2>
+<p>In order to submit jobs to AWS Batch, you need to have a working
+compute environment (CE) and a JobQueue set up. Start with the CE and
+then create a compute environment.</p>
+<h3 id="compute-environment">Compute Environment</h3>
+<ul>
+<li>Log in to AWS Batch</li>
+<li>Navigation menu: &ldquo;Compute environments&rdquo;</li>
+<li>&ldquo;Create a new compute environment&rdquo;</li>
+<li>Select &ldquo;Managed&rdquo;</li>
+<li>Provide a name for the Compute Environment</li>
+<li>Service role <code>AWSBatchServiceRole</code></li>
+<li>Instance role <code>ecsInstanceRole</code></li>
+<li>EC2 key pair: The key pair of the IAM user you intend to use for
+running AWS Batch jobs</li>
+<li>Select &ldquo;on-demand&rdquo; or &ldquo;spot&rdquo; (spot is cheaper)</li>
+<li>Select Maximum Price you&rsquo;re willing to pay for spot instances</li>
+<li>Spot fleet role <code>AmazonEC2SpotFleetRole</code></li>
+<li>Enable user-specified AMI id and provide the
+AMI id you created</li>
+<li>If desired, attach a Key/Value pair to make it possible to later
+generate e.g. billing information on a per compute environment
+basis</li>
+</ul>
+<p>Select create and you&rsquo;re all set!</p>
+<h3 id="jobqueue-set-up">JobQueue set up</h3>
+<ul>
+<li>Log in to AWS Batch</li>
+<li>Select &ldquo;Job queues&rdquo; in Navigation menu</li>
+<li>Provide a name you remember (!) for your job queue</li>
+<li>Set a priority</li>
+<li>Select the previously created compute environment for running jobs</li>
+</ul>
+<p>Select create and you&rsquo;re all set!</p>
+<h2 id="aws-configuration-nextflow">AWS Configuration Nextflow</h2>
+<p>AWS Batch configuration in Nextflow requires a couple of things:</p>
+<ul>
+<li>Publicly accessible Docker containers per process or per pipeline</li>
+<li>Executor set to <code>awsbatch</code></li>
+<li>JobQueue set to an enabled AWS Batch JobQueue</li>
+<li>An AWS region, e.g. <code>'us-east-1'</code></li>
+<li>AWSCli present in the AMI which runs the jobs</li>
+<li>S3 Buckets for temporary/work files and results</li>
+</ul>
+<p>An example on how to deal with things is to ask your users to specify
+the missing parts on pipeline execution. A working example is set in
+<a href="https://github.com/qbicsoftware/ICGC-featureCounts/blob/master/conf/awsbatch.config&amp;sa=D&amp;ust=1534850604086000" target="_blank" rel="noopener">ICGC-featureCounts</a>
+where the <code>awsbatch.config</code> specifies the required parameters for
+execution on AWSBatch.</p>
+<ul>
+<li>workDir</li>
+<li>Executor</li>
+<li>Queue</li>
+<li>Region</li>
+<li>And a custom path to AWScli inside the customized AMI to schedule jobs</li>
+</ul>
+<p>This is then set to default values in the
+<a href="https://github.com/qbicsoftware/ICGC-featureCounts/blob/master/nextflow.config&amp;sa=D&amp;ust=1534850604088000" target="_blank" rel="noopener">nextflow.config</a> of the pipeline and set according to user specified parameters when executing the pipeline. This way, users don&rsquo;t need to change the <code>awsbatch.config</code> file but can instead rely on using a set of parameters <code>--workDir, --awsqueue, --awsregion</code> and should be fine.</p>
+<h2 id="running-a-basic-job-with-aws-batch">Running a basic job with AWS Batch</h2>
+<p>You can execute an AWSBatch job on your local workstation or on a
+running EC2 instance. For longer running jobs, it might make sense to
+use a small EC2 instance (t2.micro) to run your job, as you&rsquo;re not
+relying on network connections between your local workstation and the
+AWS Batch CE/JobQueue then.</p>
+<p>You can use <code>nextflow cloud create &lt;your-cloud-name&gt;</code> to launch
+a simple instance that has nextflow installed to create a simple
+instance for running AWS Batch jobs.</p>
+<p>For this instance additional configuration can be provided in your
+<code>nextflow.config</code>or <code>~/.nextflow/config</code>file.</p>
+<pre><code class="language-bash">cloud {
+ imageId = 'ami-xxxx'
+ instanceType = 't2.micro'
+ keyName = &lt;AWS keyname&gt;
+ userName = 'ec2-user'
+}
+</code></pre>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="i-dont-want-to-risk-requesting-instances-when-nothing-runs-anymore---what-should-i-do">I don&rsquo;t want to risk requesting instances when nothing runs anymore - what should I do?</h3>
+<p>Simply disable the JobQueue and the Compute Environment and nothing
+will be requested when there are no jobs running. In our experience,
+failing jobs will also result in instance termination.</p>
+<h3 id="i-have-configured-nextflow-according-to-your-suggestion-but-every-job-fails-with-essential-container-in-task-exited---how-can-i-fix-that">I have configured nextflow according to your suggestion but every job fails with Essential container in task exited - how can I fix that?</h3>
+<p>Open CloudWatch and look at the log for the failed task. If the error
+is <code>aws command not found</code> or <code>bash: /home/ec2-user/miniconda/bin/aws</code>:
+No such file or directory' then make sure aws is installed and there are
+no typos in your <code>nextflow.config</code>.</p>
+<h3 id="i-found-an-ami-option-for-the-nextflowconfig-file-but-it-doesnt-work---is-it-broken">I found an AMI option for the nextflow.config file but it doesn&rsquo;t work - is it broken?</h3>
+<p>No, the <code>cloud.ami</code> configuration is only used for cluster creation. AWS
+Batch is a different service and the AMI needs to be specified inside
+the compute environment.</p>
+<h3 id="there-is-no---workdir-option-where-can-i-find-it">There is no <code>--workDir</code> option. Where can I find it?</h3>
+<p>The <code>--workDir, --awsqueue ,--awsregion</code> options are provided by the
+pipeline. If your pipeline is no nf-core pipeline those options won&rsquo;t be
+present. You would have to specify queue and region in your
+<code>nextflow.config</code> file. You can also provide the work directory with the
+nextflow parameter <code>-work-dir / -w</code>.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/bioinformatics/">Bioinformatics</a>
+  
+  <a class="badge badge-light" href="/tag/nf-core/">Nf-core</a>
+  
+  <a class="badge badge-light" href="/tag/nextflow/">Nextflow</a>
+  
+  <a class="badge badge-light" href="/tag/aws/">AWS</a>
+  
+  <a class="badge badge-light" href="/tag/cloud-computing/">Cloud Computing</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://apeltzer.github.io/post/01-aws-nfcore/&amp;text=Running%20nf-co.re%20pipelines%20with%20AWSBatch" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://apeltzer.github.io/post/01-aws-nfcore/&amp;t=Running%20nf-co.re%20pipelines%20with%20AWSBatch" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Running%20nf-co.re%20pipelines%20with%20AWSBatch&amp;body=https://apeltzer.github.io/post/01-aws-nfcore/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://apeltzer.github.io/post/01-aws-nfcore/&amp;title=Running%20nf-co.re%20pipelines%20with%20AWSBatch" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Running%20nf-co.re%20pipelines%20with%20AWSBatch%20https://apeltzer.github.io/post/01-aws-nfcore/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://apeltzer.github.io/post/01-aws-nfcore/&amp;title=Running%20nf-co.re%20pipelines%20with%20AWSBatch" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/talk/complex-genomics-analysis-pipelines-made-simple-with-nextflow-aws-batch/">Complex Genomics Analysis Pipelines made Simple with NextFlow &amp; AWS Batch</a></li>
+      
+      <li><a href="/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/">Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</a></li>
+      
+      <li><a href="/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/">Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</a></li>
+      
+      <li><a href="/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/">Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</a></li>
+      
+      <li><a href="/talk/migrating-legacy-workflows-to-nextflow/">Migrating legacy workflows to Nextflow</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    2021
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+        <div class="search-hit-content">
+          <div class="search-hit-name">
+            <a href="{{relpermalink}}">{{title}}</a>
+            <div class="article-metadata search-hit-type">{{type}}</div>
+            <p class="search-hit-description">{{snippet}}</p>
+          </div>
+        </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.06e52bf0665167274d459a9300d0fab2.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

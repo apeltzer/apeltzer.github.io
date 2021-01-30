@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Genetics | Personal Homepage of Alex Peltzer</title>
+    <link>https://apeltzer.github.io/tag/genetics/</link>
+      <atom:link href="https://apeltzer.github.io/tag/genetics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Genetics</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2021</copyright><lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0200</lastBuildDate>
+    <image>
+      <url>https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Genetics</title>
+      <link>https://apeltzer.github.io/tag/genetics/</link>
+    </image>
+    
+    <item>
+      <title>Affordable WGS for personal usage (part 1)</title>
+      <link>https://apeltzer.github.io/post/02-dante-wgs/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/post/02-dante-wgs/</guid>
+      <description>&lt;h2 id=&#34;how-and-why-i-did-it&#34;&gt;How and why I did it&lt;/h2&gt;
+&lt;p&gt;I was already interested in sequencing my own genome during my time as a Ph.D. student, when the first 23andme &amp;amp; other genotyping services were available publicly. After all, back then this wasn&amp;rsquo;t as exciting as I thought due to quite restricted resolution. Having access to the full genome-wide data was something I didn&amp;rsquo;t think about for a while.&lt;/p&gt;
+&lt;p&gt;During last years Black Friday event, I decided to take the opportunity to pay for my own genome to be sequenced using &lt;a href=&#34;http://dantelabs.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DanteLabs&lt;/a&gt; WGZ &amp;ldquo;Black Friday Offer&amp;rdquo;. After the payment, I figured out that in order to get the final &lt;a href=&#34;https://en.wikipedia.org/wiki/SAM_%28file_format%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BAM&lt;/a&gt; or &lt;a href=&#34;https://en.wikipedia.org/wiki/FASTQ_format&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FastQ&lt;/a&gt; file formats that you need to additionally pay US$ 50 to get an external harddisk with your &amp;ldquo;real&amp;rdquo; RAW data.&lt;/p&gt;
+&lt;p&gt;Without that, you will receive VCF file(s) for SNPs, CNVs, SVs, INDELs and two PDFs with two individual reports for medications and health-related insights. The Bioinformatician in me was however more interested in doing everything from scratch which I&amp;rsquo;m going to explicitly elucidate here a bit upon. The data looks very similar to standard Illumina data I already have some experience with, so standard WGS/WES pipeline analysis was the way to go for looking into it in more detail. Feel free to ask me on &lt;a href=&#34;https://twitter.com/alex_peltzer/status/1122589887054721026&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter&lt;/a&gt; for more details - I might update this or do several follow ups on this posting to keep people with interest in the loop.&lt;/p&gt;
+&lt;h2 id=&#34;delivery&#34;&gt;Delivery&lt;/h2&gt;
+&lt;p&gt;Upon registering and paying upfront, I got my swab kit approximately 2 weeks after payment. Immediately after sending it in, it took another about 4 weeks to get confirmation that DNA extraction went successful and I got access to the data at the website to at least download the two pdf report and my VCF files.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2019-04-28_wgz/01_report.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Upon receiving this, it took another 6 weeks until I got my RAW data in April 2019. The harddisk has 500GB and contained raw data with compressed FastQ (split across multiple lanes), some QC files, BAM and Index for that final BAM and the called Variants found on the website as VCF files.&lt;/p&gt;
+&lt;h2 id=&#34;first-analysis-steps&#34;&gt;First Analysis Steps&lt;/h2&gt;
+&lt;p&gt;I decided to utilize a pipeline for modern WGS sequencing to analyze my data in a single run. My choice for this job was the &lt;a href=&#34;https://github.com/SciLifeLab/Sarek&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sarek&lt;/a&gt; pipeline which can do all of the required steps for such an analysis in an easy manner, including QC, mapping, variant calling, annotation and reporting.&lt;/p&gt;
+&lt;h3 id=&#34;step-1-create-a-tsv-file&#34;&gt;Step 1: Create a TSV file&lt;/h3&gt;
+&lt;p&gt;First step was to create a TSV file with my data in it. I anonymized some parts here for privacy reasons but it should be quite straightforward &lt;a href=&#34;https://github.com/SciLifeLab/Sarek/blob/master/docs/INPUT.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;what the columns mean&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Alex    XY      0       Alex_Normal     15180   RAW/foo15180_L01_543_1.fastq.gz RAW/foo15180_L01_543_2.fastq.gz
+Alex    XY      0       Alex_Normal     525     RAW/foo_L01_525_1.fastq.gz  RAW/foo_L01_525_2.fastq.gz
+Alex    XY      0       Alex_Normal     526     RAW/foo_L01_526_1.fastq.gz  RAW/foo_L01_526_2.fastq.gz
+Alex    XY      0       Alex_Normal     527     RAW/foo_L01_527_1.fastq.gz  RAW/foo_L01_527_2.fastq.gz
+Alex    XY      0       Alex_Normal     528     RAW/foo_L01_528_1.fastq.gz  RAW/foo_L01_528_2.fastq.gz
+Alex    XY      0       Alex_Normal     529     RAW/foo_L01_529_1.fastq.gz  RAW/foo_L01_529_2.fastq.gz
+Alex    XY      0       Alex_Normal     530     RAW/foo_L01_530_1.fastq.gz  RAW/foo_L01_530_2.fastq.gz
+Alex    XY      0       Alex_Normal     531     RAW/foo_L01_531_1.fastq.gz  RAW/foo_L01_531_2.fastq.gz
+Alex    XY      0       Alex_Normal     532     RAW/foo_L01_532_1.fastq.gz  RAW/foo_L01_532_2.fastq.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;step-2-run-mapping--qc&#34;&gt;Step 2: Run Mapping / QC&lt;/h3&gt;
+&lt;p&gt;Second, I started the mapping and initial QC for the data:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;nextflow run SciLifeLab/Sarek/main.nf -r dev -profile standard,docker --genome &#39;GRCh37&#39; --sample sarek.tsv -resume
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;step-3-run-variantcalling&#34;&gt;Step 3: Run VariantCalling&lt;/h3&gt;
+&lt;p&gt;As I was uncertain which VariantCallers would give me best results, I just selected all of the variant callers available in Sarek for germline data:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;nextflow run SciLifeLab/Sarek/germlineVC.nf -profile standard,docker -r dev --genome &#39;GRCh37&#39; --sample Preprocessing/Recalibrated/recalibrated.tsv --tools &#39;HaplotypeCaller,strelka,manta&#39; -resume
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;step-4-annotate-the-results--create-a-report&#34;&gt;Step 4: Annotate the results &amp;amp; create a report&lt;/h3&gt;
+&lt;p&gt;Having only the raw variants isn&amp;rsquo;t really useful without annotation:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;nextflow run SciLifeLab/Sarek/annotate.nf -profile standard,docker -r dev --genome &#39;GRCh37&#39; --annotateTools &#39;HaplotypeCaller,strelka,manta&#39; --tools &#39;snpEff&#39;
+nextflow run SciLifeLab/Sarek/runMultiQC.nf -r dev -profile standard,docker
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;some-basic-statistics-and-information&#34;&gt;Some basic statistics and information&lt;/h2&gt;
+&lt;h3 id=&#34;general-qc&#34;&gt;General QC&lt;/h3&gt;
+&lt;p&gt;The data looks quite good in terms of basic metrics on the raw data.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2019-04-28_wgz/fastqc_per_base_sequence_quality_plot.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As I mapped against the GRCh37 genome reference, all these reported values are against that. In total, 936 Million reads were properly mapped, with a 41%GC content. A total coverage of 31X was achieved, with 90.6% of the genome covered at least with 10X, and 56.7% of the genome covered with at least 30X as reported by the Sarek reports.&lt;/p&gt;
+&lt;h3 id=&#34;hlatyping&#34;&gt;HLATyping&lt;/h3&gt;
+&lt;p&gt;I also extracted all of the reads on Chromosome 6:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;samtools view -bh -o chr6.alex.bam input.bam &amp;quot;6&amp;quot;
+nextflow run nf-core/hlatyping --bam -profile docker --reads &#39;chr6.alex.bam&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and HLA-typed myself using the &lt;a href=&#34;https://github.com/nf-core/hlatyping&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nf-core/hlatyping&lt;/a&gt; pipeline. Might be just the same curiousity but this worked as well using the data provided and provided me with my HLA-A, HLA-B and HLA-C types. Doing this wasn&amp;rsquo;t possible with the 23andme test back then for example.&lt;/p&gt;
+&lt;h3 id=&#34;mtdna--y-typing&#34;&gt;mtDNA / Y Typing&lt;/h3&gt;
+&lt;p&gt;Using a simple command, I was able to extract and call the consensus sequence of my mtDNA and type myself to confirm my previous 23and me genotyping results. Fortunately, the &lt;a href=&#34;https://haplogrep.uibk.ac.at/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Haplogrep 2&lt;/a&gt; service and the &lt;a href=&#34;https://github.com/23andMe/yhaplo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Y-Haplo&lt;/a&gt; teams provide their services for everyone and uploading my data there to determine my mtDNA haplogroup and my Y-haplogroup was quit easy, too.&lt;/p&gt;
+&lt;h2 id=&#34;future-updates&#34;&gt;Future updates&lt;/h2&gt;
+&lt;p&gt;There will be follow up posts once I got more time to look at my data. I will probably integrate my data with population genetics datasets such as Human Origins and also have a more detailed look at some variant analysis methods.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reproducible research | Personal Homepage of Alex Peltzer</title>
+    <link>https://apeltzer.github.io/tag/reproducible-research/</link>
+      <atom:link href="https://apeltzer.github.io/tag/reproducible-research/index.xml" rel="self" type="application/rss+xml" />
+    <description>reproducible research</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2021</copyright><lastBuildDate>Wed, 02 Sep 2020 15:30:00 +0200</lastBuildDate>
+    <image>
+      <url>https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>reproducible research</title>
+      <link>https://apeltzer.github.io/tag/reproducible-research/</link>
+    </image>
+    
+    <item>
+      <title>Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</title>
+      <link>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</link>
+      <pubDate>Wed, 02 Sep 2020 15:30:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</title>
+      <link>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</link>
+      <pubDate>Fri, 03 Apr 2020 09:30:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</title>
+      <link>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</link>
+      <pubDate>Tue, 14 Jan 2020 09:30:00 +0100</pubDate>
+      <guid>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Migrating legacy workflows to Nextflow</title>
+      <link>https://apeltzer.github.io/talk/migrating-legacy-workflows-to-nextflow/</link>
+      <pubDate>Thu, 19 Sep 2019 09:45:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/migrating-legacy-workflows-to-nextflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BigData analytics with Nextflow and nf-core</title>
+      <link>https://apeltzer.github.io/talk/bigdata-analytics-with-nextflow-and-nf-core/</link>
+      <pubDate>Tue, 03 Sep 2019 11:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/bigdata-analytics-with-nextflow-and-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nf-core: Community built bioinformatics pipelines</title>
+      <link>https://apeltzer.github.io/talk/nf-core-community-built-bioinformatics-pipelines/</link>
+      <pubDate>Fri, 26 Jul 2019 09:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/nf-core-community-built-bioinformatics-pipelines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nf-core: Community built bioinformatics pipelines</title>
+      <link>https://apeltzer.github.io/talk/nf-core-community-built-bioinformatics-pipelines/</link>
+      <pubDate>Thu, 25 Jul 2019 14:20:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/nf-core-community-built-bioinformatics-pipelines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BigData Analytics with Nextflow &amp; nf-core</title>
+      <link>https://apeltzer.github.io/talk/bigdata-analytics-with-nextflow-nf-core/</link>
+      <pubDate>Sat, 06 Jul 2019 11:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/bigdata-analytics-with-nextflow-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Complex Genomics Analysis Pipelines made Simple with NextFlow &amp; AWS Batch</title>
+      <link>https://apeltzer.github.io/talk/complex-genomics-analysis-pipelines-made-simple-with-nextflow-aws-batch/</link>
+      <pubDate>Wed, 27 Feb 2019 15:00:00 +0100</pubDate>
+      <guid>https://apeltzer.github.io/talk/complex-genomics-analysis-pipelines-made-simple-with-nextflow-aws-batch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nf-core: Community-based best practice pipeline development in Nextflow</title>
+      <link>https://apeltzer.github.io/talk/nf-core-community-based-best-practice-pipeline-development-in-nextflow/</link>
+      <pubDate>Mon, 25 Feb 2019 11:00:00 +0100</pubDate>
+      <guid>https://apeltzer.github.io/talk/nf-core-community-based-best-practice-pipeline-development-in-nextflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bioinfo-core teleconference on Nextflow and nf-core</title>
+      <link>https://apeltzer.github.io/talk/bioinfo-core-teleconference-on-nextflow-and-nf-core/</link>
+      <pubDate>Tue, 06 Nov 2018 15:00:00 +0100</pubDate>
+      <guid>https://apeltzer.github.io/talk/bioinfo-core-teleconference-on-nextflow-and-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nf-core: Community-based best practice pipeline development in Nextflow</title>
+      <link>https://apeltzer.github.io/talk/nf-core-community-based-best-practice-pipeline-development-in-nextflow/</link>
+      <pubDate>Mon, 29 Oct 2018 11:00:00 +0100</pubDate>
+      <guid>https://apeltzer.github.io/talk/nf-core-community-based-best-practice-pipeline-development-in-nextflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EAGER2: A modern framework for aDNA analysis</title>
+      <link>https://apeltzer.github.io/talk/eager2-a-modern-framework-for-adna-analysis/</link>
+      <pubDate>Mon, 15 Oct 2018 10:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/eager2-a-modern-framework-for-adna-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nf-core: Community-based best practice pipeline development in Nextflow</title>
+      <link>https://apeltzer.github.io/talk/nf-core-community-based-best-practice-pipeline-development-in-nextflow/</link>
+      <pubDate>Mon, 24 Sep 2018 14:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/nf-core-community-based-best-practice-pipeline-development-in-nextflow/</guid>
+      <description>&lt;p&gt;Slides can be found &lt;a href=&#34;http://bit.ly/hpcbw18&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>nf-core: Community-based best practice pipeline development in Nextflow</title>
+      <link>https://apeltzer.github.io/talk/nf-core-community-based-best-practice-pipeline-development-in-nextflow/</link>
+      <pubDate>Tue, 17 Jul 2018 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/nf-core-community-based-best-practice-pipeline-development-in-nextflow/</guid>
+      <description>&lt;p&gt;Slides can be found &lt;a href=&#34;https://slides.com/apeltzer/sc-nfcore&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>nf-core: Community-based best practice pipeline development in Nextflow</title>
+      <link>https://apeltzer.github.io/talk/nf-core-community-based-best-practice-pipeline-development-in-nextflow/</link>
+      <pubDate>Fri, 06 Jul 2018 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/nf-core-community-based-best-practice-pipeline-development-in-nextflow/</guid>
+      <description>&lt;p&gt;Slides can be found &lt;a href=&#34;bit.ly/ismb2018-nfcore&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reproducible data analysis with Nextflow &amp; nf-core</title>
+      <link>https://apeltzer.github.io/talk/reproducible-data-analysis-with-nextflow-nf-core/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/reproducible-data-analysis-with-nextflow-nf-core/</guid>
+      <description>&lt;p&gt;Slides can be found &lt;a href=&#34;http://bit.ly/nfcoreisc2018&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>EAGER: Efficient ancient genome Reconstruction</title>
+      <link>https://apeltzer.github.io/talk/eager-efficient-ancient-genome-reconstruction/</link>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/eager-efficient-ancient-genome-reconstruction/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

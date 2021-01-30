@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud Computing | Personal Homepage of Alex Peltzer</title>
+    <link>https://apeltzer.github.io/tag/cloud-computing/</link>
+      <atom:link href="https://apeltzer.github.io/tag/cloud-computing/index.xml" rel="self" type="application/rss+xml" />
+    <description>Cloud Computing</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2021</copyright><lastBuildDate>Wed, 02 Sep 2020 15:30:00 +0200</lastBuildDate>
+    <image>
+      <url>https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Cloud Computing</title>
+      <link>https://apeltzer.github.io/tag/cloud-computing/</link>
+    </image>
+    
+    <item>
+      <title>Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</title>
+      <link>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</link>
+      <pubDate>Wed, 02 Sep 2020 15:30:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</title>
+      <link>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</link>
+      <pubDate>Fri, 03 Apr 2020 09:30:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</title>
+      <link>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</link>
+      <pubDate>Tue, 14 Jan 2020 09:30:00 +0100</pubDate>
+      <guid>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Migrating legacy workflows to Nextflow</title>
+      <link>https://apeltzer.github.io/talk/migrating-legacy-workflows-to-nextflow/</link>
+      <pubDate>Thu, 19 Sep 2019 09:45:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/migrating-legacy-workflows-to-nextflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BigData analytics with Nextflow and nf-core</title>
+      <link>https://apeltzer.github.io/talk/bigdata-analytics-with-nextflow-and-nf-core/</link>
+      <pubDate>Tue, 03 Sep 2019 11:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/bigdata-analytics-with-nextflow-and-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nf-core: Community built bioinformatics pipelines</title>
+      <link>https://apeltzer.github.io/talk/nf-core-community-built-bioinformatics-pipelines/</link>
+      <pubDate>Fri, 26 Jul 2019 09:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/nf-core-community-built-bioinformatics-pipelines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nf-core: Community built bioinformatics pipelines</title>
+      <link>https://apeltzer.github.io/talk/nf-core-community-built-bioinformatics-pipelines/</link>
+      <pubDate>Thu, 25 Jul 2019 14:20:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/nf-core-community-built-bioinformatics-pipelines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BigData Analytics with Nextflow &amp; nf-core</title>
+      <link>https://apeltzer.github.io/talk/bigdata-analytics-with-nextflow-nf-core/</link>
+      <pubDate>Sat, 06 Jul 2019 11:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/bigdata-analytics-with-nextflow-nf-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Complex Genomics Analysis Pipelines made Simple with NextFlow &amp; AWS Batch</title>
+      <link>https://apeltzer.github.io/talk/complex-genomics-analysis-pipelines-made-simple-with-nextflow-aws-batch/</link>
+      <pubDate>Wed, 27 Feb 2019 15:00:00 +0100</pubDate>
+      <guid>https://apeltzer.github.io/talk/complex-genomics-analysis-pipelines-made-simple-with-nextflow-aws-batch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Running nf-co.re pipelines with AWSBatch</title>
+      <link>https://apeltzer.github.io/post/01-aws-nfcore/</link>
+      <pubDate>Tue, 21 Aug 2018 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/post/01-aws-nfcore/</guid>
+      <description>&lt;p&gt;This document is based on experiences provided by &lt;a href=&#34;https://maxulysse.github.io/2017/11/16/Running-CAW-with-AWS-Batch/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maxime Garcia&lt;/a&gt; at his blogpost on running CAW with AWSBatch and our own experiences. We just wanted to acknowledge the effort that Maxime also put into making this work!&lt;/p&gt;
+&lt;h2 id=&#34;basic-requirements&#34;&gt;Basic Requirements&lt;/h2&gt;
+&lt;p&gt;In order to run this, you need to have a &lt;a href=&#34;https://www.google.com/url?q=http://aws.amazon.com&amp;amp;sa=D&amp;amp;ust=1534850604063000&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AWS
+account&lt;/a&gt; set up and create an IAM user for it. More detailed information on how to do this can be found under the above link. The IAM set up is described in the &lt;a href=&#34;#h.iamsetup&#34;&gt;next section&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;iam-user-setuphiamsetup&#34;&gt;&lt;a href=&#34;#h.iamsetup&#34;&gt;IAM User setup&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Please follow the instructions on AWS to set up an IAM user for running
+Batch jobs on AWSBatch. This user has to be provided with the required
+permissions to run Batch jobs. Permissions on AWS are set up using &lt;a href=&#34;https://www.google.com/url?q=https://console.aws.amazon.com/iam&amp;amp;sa=D&amp;amp;ust=1534850604070000&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the IAM service&lt;/a&gt; and you have to start by creating a new user using the &amp;ldquo;Add user&amp;rdquo; interface. Please attach the following permissions to your newly created user afterwards:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;AmazonEC2FullAccess&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AmazonS3FullAccess&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AWSBatchFullAccess&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This should already suffice in terms of user permissions to run jobs on
+AWS Batch.&lt;/p&gt;
+&lt;h3 id=&#34;service-role-setuphservicerolesetup&#34;&gt;&lt;a href=&#34;#h.servicerolesetup&#34;&gt;Service role setup&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Next, we need to set up permissions for AWS Batch to e.g. run/stop EC2
+instances for us by generating the required roles on IAM. These are
+managed as separate roles in IAM under &amp;ldquo;Roles&amp;rdquo;. Some of these are
+created automatically for you when you set up a Batch job at the first
+time, but we can make sure that these are already present and configured
+properly beforehand.&lt;/p&gt;
+&lt;p&gt;You need the service roles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;AWSBatchServiceRole&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ecsInstanceRole&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AWSServiceRoleForEC2SpotFleet&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AmazonEC2SpotFleetRole&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The latter two are not required if you are not intending to use spot
+instances (you should use them to save money!).&lt;/p&gt;
+&lt;h4 id=&#34;awsbatchservicerole&#34;&gt;AWSBatchServiceRole&lt;/h4&gt;
+&lt;p&gt;This role should have the policy &lt;code&gt;AWSBatchServiceRole&lt;/code&gt; attached.
+&lt;img src=&#34;https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;ecsinstancerole&#34;&gt;ecsInstanceRole&lt;/h4&gt;
+&lt;p&gt;This role should have the policies &lt;code&gt;AmazonS3FullAccess&lt;/code&gt; and
+&lt;code&gt;AmazonEC2ContainerServiceforEC2Role&lt;/code&gt; set.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;awsserviceroleforec2spotfleet&#34;&gt;AWSServiceRoleForEC2SpotFleet&lt;/h4&gt;
+&lt;p&gt;This role should have the policy &lt;code&gt;AWSEC2SpotFleetServiceRolePolicy&lt;/code&gt;
+set.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;amazonec2spotfleetrole&#34;&gt;AmazonEC2SpotFleetRole&lt;/h4&gt;
+&lt;p&gt;This role should have the policies &lt;code&gt;AmazonEC2SpotFleetRole&lt;/code&gt; and
+&lt;code&gt;AmazonEC2SpotFleetTaggingRole&lt;/code&gt; set accordingly.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image8.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Once you have set these roles, the permissions for running a job with
+the selected IAM user can be used to configure a compute environment
+(CE) and a job queue to run your jobs.&lt;/p&gt;
+&lt;p&gt;You need to get the accesskey/token combination for using AWS and need
+to have these present on the machine starting the jobs in a file
+&lt;code&gt;~/.aws/credentials&lt;/code&gt; such as:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;[default]
+aws_access_key_id = KEY
+aws_secret_access_key = secretKEY
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;ami&#34;&gt;AMI&lt;/h2&gt;
+&lt;p&gt;Now that you have all the permissions set up you need to create a
+custom amazon machine image (AMI). This will be used later by the EC2
+instances started by AWS batch.&lt;/p&gt;
+&lt;h3 id=&#34;ami-preparation&#34;&gt;AMI preparation&lt;/h3&gt;
+&lt;p&gt;First you have to set up an EC2 instance which will later be converted
+into an AMI. Please use the ECS-Optimized Amazon Linux AMI since it
+provides docker installation and configuration.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Choose a t2.micro instance for the instance type since the instance
+type does not impact the AMI.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Configuration of the Instance Details is not needed as the default
+configuration should suffice.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Depending on the docker image sizes you expect your Batch instances to
+handle, choose a larger EBS storage in the storage configuration.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Optional Tags can be added in Step 5.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2018-08-21_awsnfcore/image2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In the last step configure your Security Group. Make sure you can
+connect to the EC2 instance when doing so. You can also let AWS create a
+security group for you.Now launch the instance.&lt;/p&gt;
+&lt;p&gt;Connect to your t2.micro instance and perform the following
+steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Update the yum repository&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sudo yum update&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Check the docker configuration and make sure the docker storage size matches your configured one.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;docker info&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Check whether awscli is installed&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;aws --version&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install awscli using miniconda&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86\_64.sh
+bash Miniconda3-latest-Linux-x86\_64.sh -p /home/ec2-user/miniconda
+/home/ec2-user/miniconda/bin/conda install -c conda-forge awscli
+/home/ec2-user/miniconda/bin/aws --version
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;ami-creation&#34;&gt;AMI creation&lt;/h3&gt;
+&lt;p&gt;Now that you have configured your EC2 instance you can logout and stop
+the instance.&lt;/p&gt;
+&lt;p&gt;In the EC2 Management Console select the stopped instance and choose
+the Action Image-&amp;gt;Create Image&lt;/p&gt;
+&lt;p&gt;Choose a name and a description and create the AMI.&lt;/p&gt;
+&lt;h2 id=&#34;set-up-queue--compute-environment&#34;&gt;Set up QUEUE / Compute Environment&lt;/h2&gt;
+&lt;p&gt;In order to submit jobs to AWS Batch, you need to have a working
+compute environment (CE) and a JobQueue set up. Start with the CE and
+then create a compute environment.&lt;/p&gt;
+&lt;h3 id=&#34;compute-environment&#34;&gt;Compute Environment&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Log in to AWS Batch&lt;/li&gt;
+&lt;li&gt;Navigation menu: &amp;ldquo;Compute environments&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Create a new compute environment&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Select &amp;ldquo;Managed&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Provide a name for the Compute Environment&lt;/li&gt;
+&lt;li&gt;Service role &lt;code&gt;AWSBatchServiceRole&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Instance role &lt;code&gt;ecsInstanceRole&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;EC2 key pair: The key pair of the IAM user you intend to use for
+running AWS Batch jobs&lt;/li&gt;
+&lt;li&gt;Select &amp;ldquo;on-demand&amp;rdquo; or &amp;ldquo;spot&amp;rdquo; (spot is cheaper)&lt;/li&gt;
+&lt;li&gt;Select Maximum Price you&amp;rsquo;re willing to pay for spot instances&lt;/li&gt;
+&lt;li&gt;Spot fleet role &lt;code&gt;AmazonEC2SpotFleetRole&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Enable user-specified AMI id and provide the
+AMI id you created&lt;/li&gt;
+&lt;li&gt;If desired, attach a Key/Value pair to make it possible to later
+generate e.g. billing information on a per compute environment
+basis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Select create and you&amp;rsquo;re all set!&lt;/p&gt;
+&lt;h3 id=&#34;jobqueue-set-up&#34;&gt;JobQueue set up&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Log in to AWS Batch&lt;/li&gt;
+&lt;li&gt;Select &amp;ldquo;Job queues&amp;rdquo; in Navigation menu&lt;/li&gt;
+&lt;li&gt;Provide a name you remember (!) for your job queue&lt;/li&gt;
+&lt;li&gt;Set a priority&lt;/li&gt;
+&lt;li&gt;Select the previously created compute environment for running jobs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Select create and you&amp;rsquo;re all set!&lt;/p&gt;
+&lt;h2 id=&#34;aws-configuration-nextflow&#34;&gt;AWS Configuration Nextflow&lt;/h2&gt;
+&lt;p&gt;AWS Batch configuration in Nextflow requires a couple of things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Publicly accessible Docker containers per process or per pipeline&lt;/li&gt;
+&lt;li&gt;Executor set to &lt;code&gt;awsbatch&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;JobQueue set to an enabled AWS Batch JobQueue&lt;/li&gt;
+&lt;li&gt;An AWS region, e.g. &lt;code&gt;&#39;us-east-1&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;AWSCli present in the AMI which runs the jobs&lt;/li&gt;
+&lt;li&gt;S3 Buckets for temporary/work files and results&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;An example on how to deal with things is to ask your users to specify
+the missing parts on pipeline execution. A working example is set in
+&lt;a href=&#34;https://github.com/qbicsoftware/ICGC-featureCounts/blob/master/conf/awsbatch.config&amp;amp;sa=D&amp;amp;ust=1534850604086000&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ICGC-featureCounts&lt;/a&gt;
+where the &lt;code&gt;awsbatch.config&lt;/code&gt; specifies the required parameters for
+execution on AWSBatch.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;workDir&lt;/li&gt;
+&lt;li&gt;Executor&lt;/li&gt;
+&lt;li&gt;Queue&lt;/li&gt;
+&lt;li&gt;Region&lt;/li&gt;
+&lt;li&gt;And a custom path to AWScli inside the customized AMI to schedule jobs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is then set to default values in the
+&lt;a href=&#34;https://github.com/qbicsoftware/ICGC-featureCounts/blob/master/nextflow.config&amp;amp;sa=D&amp;amp;ust=1534850604088000&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nextflow.config&lt;/a&gt; of the pipeline and set according to user specified parameters when executing the pipeline. This way, users don&amp;rsquo;t need to change the &lt;code&gt;awsbatch.config&lt;/code&gt; file but can instead rely on using a set of parameters &lt;code&gt;--workDir, --awsqueue, --awsregion&lt;/code&gt; and should be fine.&lt;/p&gt;
+&lt;h2 id=&#34;running-a-basic-job-with-aws-batch&#34;&gt;Running a basic job with AWS Batch&lt;/h2&gt;
+&lt;p&gt;You can execute an AWSBatch job on your local workstation or on a
+running EC2 instance. For longer running jobs, it might make sense to
+use a small EC2 instance (t2.micro) to run your job, as you&amp;rsquo;re not
+relying on network connections between your local workstation and the
+AWS Batch CE/JobQueue then.&lt;/p&gt;
+&lt;p&gt;You can use &lt;code&gt;nextflow cloud create &amp;lt;your-cloud-name&amp;gt;&lt;/code&gt; to launch
+a simple instance that has nextflow installed to create a simple
+instance for running AWS Batch jobs.&lt;/p&gt;
+&lt;p&gt;For this instance additional configuration can be provided in your
+&lt;code&gt;nextflow.config&lt;/code&gt;or &lt;code&gt;~/.nextflow/config&lt;/code&gt;file.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cloud {
+ imageId = &#39;ami-xxxx&#39;
+ instanceType = &#39;t2.micro&#39;
+ keyName = &amp;lt;AWS keyname&amp;gt;
+ userName = &#39;ec2-user&#39;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h2&gt;
+&lt;h3 id=&#34;i-dont-want-to-risk-requesting-instances-when-nothing-runs-anymore---what-should-i-do&#34;&gt;I don&amp;rsquo;t want to risk requesting instances when nothing runs anymore - what should I do?&lt;/h3&gt;
+&lt;p&gt;Simply disable the JobQueue and the Compute Environment and nothing
+will be requested when there are no jobs running. In our experience,
+failing jobs will also result in instance termination.&lt;/p&gt;
+&lt;h3 id=&#34;i-have-configured-nextflow-according-to-your-suggestion-but-every-job-fails-with-essential-container-in-task-exited---how-can-i-fix-that&#34;&gt;I have configured nextflow according to your suggestion but every job fails with Essential container in task exited - how can I fix that?&lt;/h3&gt;
+&lt;p&gt;Open CloudWatch and look at the log for the failed task. If the error
+is &lt;code&gt;aws command not found&lt;/code&gt; or &lt;code&gt;bash: /home/ec2-user/miniconda/bin/aws&lt;/code&gt;:
+No such file or directory&#39; then make sure aws is installed and there are
+no typos in your &lt;code&gt;nextflow.config&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;i-found-an-ami-option-for-the-nextflowconfig-file-but-it-doesnt-work---is-it-broken&#34;&gt;I found an AMI option for the nextflow.config file but it doesn&amp;rsquo;t work - is it broken?&lt;/h3&gt;
+&lt;p&gt;No, the &lt;code&gt;cloud.ami&lt;/code&gt; configuration is only used for cluster creation. AWS
+Batch is a different service and the AMI needs to be specified inside
+the compute environment.&lt;/p&gt;
+&lt;h3 id=&#34;there-is-no---workdir-option-where-can-i-find-it&#34;&gt;There is no &lt;code&gt;--workDir&lt;/code&gt; option. Where can I find it?&lt;/h3&gt;
+&lt;p&gt;The &lt;code&gt;--workDir, --awsqueue ,--awsregion&lt;/code&gt; options are provided by the
+pipeline. If your pipeline is no nf-core pipeline those options won&amp;rsquo;t be
+present. You would have to specify queue and region in your
+&lt;code&gt;nextflow.config&lt;/code&gt; file. You can also provide the work directory with the
+nextflow parameter &lt;code&gt;-work-dir / -w&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

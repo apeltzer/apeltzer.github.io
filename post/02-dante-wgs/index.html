@@ -1,0 +1,1206 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  
+  <meta name="generator" content="Wowchemy 5.0.0-beta.2 for Hugo">
+  
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Analyzing my own genome data from DanteLabs WGZ service.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://apeltzer.github.io/post/02-dante-wgs/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#1565c0">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous" media="print" onload="this.media='all'">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.33319bbe33e1b9feff835521b777a249.css">
+
+  
+
+
+
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  
+  <link rel="manifest" href="/index.webmanifest">
+  
+
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://apeltzer.github.io/post/02-dante-wgs/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Personal Homepage of Alex Peltzer">
+  <meta property="og:url" content="https://apeltzer.github.io/post/02-dante-wgs/">
+  <meta property="og:title" content="Affordable WGS for personal usage (part 1) | Personal Homepage of Alex Peltzer">
+  <meta property="og:description" content="Analyzing my own genome data from DanteLabs WGZ service."><meta property="og:image" content="https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-04-28T00:00:00&#43;02:00">
+    
+    <meta property="article:modified_time" content="2019-04-28T20:00:00&#43;02:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://apeltzer.github.io/post/02-dante-wgs/"
+  },
+  "headline": "Affordable WGS for personal usage (part 1)",
+  
+  "datePublished": "2019-04-28T00:00:00+02:00",
+  "dateModified": "2019-04-28T20:00:00+02:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Alexander Peltzer"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Personal Homepage of Alex Peltzer",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Analyzing my own genome data from DanteLabs WGZ service."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Affordable WGS for personal usage (part 1) | Personal Homepage of Alex Peltzer</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  ">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.d876f1a6b98701f9238f2313b512a26f.js"></script>
+
+  
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Personal Homepage of Alex Peltzer</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Personal Homepage of Alex Peltzer</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Affordable WGS for personal usage (part 1)</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      Alexander Peltzer</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Apr 28, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="how-and-why-i-did-it">How and why I did it</h2>
+<p>I was already interested in sequencing my own genome during my time as a Ph.D. student, when the first 23andme &amp; other genotyping services were available publicly. After all, back then this wasn&rsquo;t as exciting as I thought due to quite restricted resolution. Having access to the full genome-wide data was something I didn&rsquo;t think about for a while.</p>
+<p>During last years Black Friday event, I decided to take the opportunity to pay for my own genome to be sequenced using <a href="http://dantelabs.com/" target="_blank" rel="noopener">DanteLabs</a> WGZ &ldquo;Black Friday Offer&rdquo;. After the payment, I figured out that in order to get the final <a href="https://en.wikipedia.org/wiki/SAM_%28file_format%29" target="_blank" rel="noopener">BAM</a> or <a href="https://en.wikipedia.org/wiki/FASTQ_format" target="_blank" rel="noopener">FastQ</a> file formats that you need to additionally pay US$ 50 to get an external harddisk with your &ldquo;real&rdquo; RAW data.</p>
+<p>Without that, you will receive VCF file(s) for SNPs, CNVs, SVs, INDELs and two PDFs with two individual reports for medications and health-related insights. The Bioinformatician in me was however more interested in doing everything from scratch which I&rsquo;m going to explicitly elucidate here a bit upon. The data looks very similar to standard Illumina data I already have some experience with, so standard WGS/WES pipeline analysis was the way to go for looking into it in more detail. Feel free to ask me on <a href="https://twitter.com/alex_peltzer/status/1122589887054721026" target="_blank" rel="noopener">Twitter</a> for more details - I might update this or do several follow ups on this posting to keep people with interest in the loop.</p>
+<h2 id="delivery">Delivery</h2>
+<p>Upon registering and paying upfront, I got my swab kit approximately 2 weeks after payment. Immediately after sending it in, it took another about 4 weeks to get confirmation that DNA extraction went successful and I got access to the data at the website to at least download the two pdf report and my VCF files.</p>
+<p><img src="https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2019-04-28_wgz/01_report.png" alt=""></p>
+<p>Upon receiving this, it took another 6 weeks until I got my RAW data in April 2019. The harddisk has 500GB and contained raw data with compressed FastQ (split across multiple lanes), some QC files, BAM and Index for that final BAM and the called Variants found on the website as VCF files.</p>
+<h2 id="first-analysis-steps">First Analysis Steps</h2>
+<p>I decided to utilize a pipeline for modern WGS sequencing to analyze my data in a single run. My choice for this job was the <a href="https://github.com/SciLifeLab/Sarek" target="_blank" rel="noopener">Sarek</a> pipeline which can do all of the required steps for such an analysis in an easy manner, including QC, mapping, variant calling, annotation and reporting.</p>
+<h3 id="step-1-create-a-tsv-file">Step 1: Create a TSV file</h3>
+<p>First step was to create a TSV file with my data in it. I anonymized some parts here for privacy reasons but it should be quite straightforward <a href="https://github.com/SciLifeLab/Sarek/blob/master/docs/INPUT.md" target="_blank" rel="noopener">what the columns mean</a>.</p>
+<pre><code class="language-bash">Alex    XY      0       Alex_Normal     15180   RAW/foo15180_L01_543_1.fastq.gz RAW/foo15180_L01_543_2.fastq.gz
+Alex    XY      0       Alex_Normal     525     RAW/foo_L01_525_1.fastq.gz  RAW/foo_L01_525_2.fastq.gz
+Alex    XY      0       Alex_Normal     526     RAW/foo_L01_526_1.fastq.gz  RAW/foo_L01_526_2.fastq.gz
+Alex    XY      0       Alex_Normal     527     RAW/foo_L01_527_1.fastq.gz  RAW/foo_L01_527_2.fastq.gz
+Alex    XY      0       Alex_Normal     528     RAW/foo_L01_528_1.fastq.gz  RAW/foo_L01_528_2.fastq.gz
+Alex    XY      0       Alex_Normal     529     RAW/foo_L01_529_1.fastq.gz  RAW/foo_L01_529_2.fastq.gz
+Alex    XY      0       Alex_Normal     530     RAW/foo_L01_530_1.fastq.gz  RAW/foo_L01_530_2.fastq.gz
+Alex    XY      0       Alex_Normal     531     RAW/foo_L01_531_1.fastq.gz  RAW/foo_L01_531_2.fastq.gz
+Alex    XY      0       Alex_Normal     532     RAW/foo_L01_532_1.fastq.gz  RAW/foo_L01_532_2.fastq.gz
+</code></pre>
+<h3 id="step-2-run-mapping--qc">Step 2: Run Mapping / QC</h3>
+<p>Second, I started the mapping and initial QC for the data:</p>
+<pre><code class="language-bash">nextflow run SciLifeLab/Sarek/main.nf -r dev -profile standard,docker --genome 'GRCh37' --sample sarek.tsv -resume
+</code></pre>
+<h3 id="step-3-run-variantcalling">Step 3: Run VariantCalling</h3>
+<p>As I was uncertain which VariantCallers would give me best results, I just selected all of the variant callers available in Sarek for germline data:</p>
+<pre><code class="language-bash">nextflow run SciLifeLab/Sarek/germlineVC.nf -profile standard,docker -r dev --genome 'GRCh37' --sample Preprocessing/Recalibrated/recalibrated.tsv --tools 'HaplotypeCaller,strelka,manta' -resume
+</code></pre>
+<h3 id="step-4-annotate-the-results--create-a-report">Step 4: Annotate the results &amp; create a report</h3>
+<p>Having only the raw variants isn&rsquo;t really useful without annotation:</p>
+<pre><code class="language-bash">nextflow run SciLifeLab/Sarek/annotate.nf -profile standard,docker -r dev --genome 'GRCh37' --annotateTools 'HaplotypeCaller,strelka,manta' --tools 'snpEff'
+nextflow run SciLifeLab/Sarek/runMultiQC.nf -r dev -profile standard,docker
+</code></pre>
+<h2 id="some-basic-statistics-and-information">Some basic statistics and information</h2>
+<h3 id="general-qc">General QC</h3>
+<p>The data looks quite good in terms of basic metrics on the raw data.</p>
+<p><img src="https://raw.githubusercontent.com/apeltzer/starter-academic/master/static/img/2019-04-28_wgz/fastqc_per_base_sequence_quality_plot.png" alt=""></p>
+<p>As I mapped against the GRCh37 genome reference, all these reported values are against that. In total, 936 Million reads were properly mapped, with a 41%GC content. A total coverage of 31X was achieved, with 90.6% of the genome covered at least with 10X, and 56.7% of the genome covered with at least 30X as reported by the Sarek reports.</p>
+<h3 id="hlatyping">HLATyping</h3>
+<p>I also extracted all of the reads on Chromosome 6:</p>
+<pre><code class="language-bash">samtools view -bh -o chr6.alex.bam input.bam &quot;6&quot;
+nextflow run nf-core/hlatyping --bam -profile docker --reads 'chr6.alex.bam'
+</code></pre>
+<p>and HLA-typed myself using the <a href="https://github.com/nf-core/hlatyping" target="_blank" rel="noopener">nf-core/hlatyping</a> pipeline. Might be just the same curiousity but this worked as well using the data provided and provided me with my HLA-A, HLA-B and HLA-C types. Doing this wasn&rsquo;t possible with the 23andme test back then for example.</p>
+<h3 id="mtdna--y-typing">mtDNA / Y Typing</h3>
+<p>Using a simple command, I was able to extract and call the consensus sequence of my mtDNA and type myself to confirm my previous 23and me genotyping results. Fortunately, the <a href="https://haplogrep.uibk.ac.at/" target="_blank" rel="noopener">Haplogrep 2</a> service and the <a href="https://github.com/23andMe/yhaplo" target="_blank" rel="noopener">Y-Haplo</a> teams provide their services for everyone and uploading my data there to determine my mtDNA haplogroup and my Y-haplogroup was quit easy, too.</p>
+<h2 id="future-updates">Future updates</h2>
+<p>There will be follow up posts once I got more time to look at my data. I will probably integrate my data with population genetics datasets such as Human Origins and also have a more detailed look at some variant analysis methods.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/bioinformatics/">Bioinformatics</a>
+  
+  <a class="badge badge-light" href="/tag/nf-core/">Nf-core</a>
+  
+  <a class="badge badge-light" href="/tag/nextflow/">Nextflow</a>
+  
+  <a class="badge badge-light" href="/tag/wgs/">WGS</a>
+  
+  <a class="badge badge-light" href="/tag/genetics/">Genetics</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://apeltzer.github.io/post/02-dante-wgs/&amp;text=Affordable%20WGS%20for%20personal%20usage%20%28part%201%29" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://apeltzer.github.io/post/02-dante-wgs/&amp;t=Affordable%20WGS%20for%20personal%20usage%20%28part%201%29" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Affordable%20WGS%20for%20personal%20usage%20%28part%201%29&amp;body=https://apeltzer.github.io/post/02-dante-wgs/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://apeltzer.github.io/post/02-dante-wgs/&amp;title=Affordable%20WGS%20for%20personal%20usage%20%28part%201%29" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Affordable%20WGS%20for%20personal%20usage%20%28part%201%29%20https://apeltzer.github.io/post/02-dante-wgs/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://apeltzer.github.io/post/02-dante-wgs/&amp;title=Affordable%20WGS%20for%20personal%20usage%20%28part%201%29" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/">Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</a></li>
+      
+      <li><a href="/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/">Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</a></li>
+      
+      <li><a href="/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/">Scalable, reproducible bioinformatics workflows using Nextflow &amp; nf-core</a></li>
+      
+      <li><a href="/talk/migrating-legacy-workflows-to-nextflow/">Migrating legacy workflows to Nextflow</a></li>
+      
+      <li><a href="/talk/bigdata-analytics-with-nextflow-and-nf-core/">BigData analytics with Nextflow and nf-core</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    2021
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+    Published with
+    <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>  —
+    the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">
+    open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+        <div class="search-hit-content">
+          <div class="search-hit-name">
+            <a href="{{relpermalink}}">{{title}}</a>
+            <div class="article-metadata search-hit-type">{{type}}</div>
+            <p class="search-hit-description">{{snippet}}</p>
+          </div>
+        </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.06e52bf0665167274d459a9300d0fab2.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

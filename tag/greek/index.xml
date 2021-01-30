@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Greek | Personal Homepage of Alex Peltzer</title>
+    <link>https://apeltzer.github.io/tag/greek/</link>
+      <atom:link href="https://apeltzer.github.io/tag/greek/index.xml" rel="self" type="application/rss+xml" />
+    <description>Greek</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2021</copyright><lastBuildDate>Wed, 02 Aug 2017 00:00:00 +0200</lastBuildDate>
+    <image>
+      <url>https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Greek</title>
+      <link>https://apeltzer.github.io/tag/greek/</link>
+    </image>
+    
+    <item>
+      <title>Genetic origins of the Minoans and Mycenaeans</title>
+      <link>https://apeltzer.github.io/publication/06-greeks/</link>
+      <pubDate>Wed, 02 Aug 2017 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/publication/06-greeks/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

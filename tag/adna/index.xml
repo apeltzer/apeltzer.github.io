@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aDNA | Personal Homepage of Alex Peltzer</title>
+    <link>https://apeltzer.github.io/tag/adna/</link>
+      <atom:link href="https://apeltzer.github.io/tag/adna/index.xml" rel="self" type="application/rss+xml" />
+    <description>aDNA</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2021</copyright><lastBuildDate>Mon, 15 Oct 2018 10:00:00 +0200</lastBuildDate>
+    <image>
+      <url>https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>aDNA</title>
+      <link>https://apeltzer.github.io/tag/adna/</link>
+    </image>
+    
+    <item>
+      <title>EAGER2: A modern framework for aDNA analysis</title>
+      <link>https://apeltzer.github.io/talk/eager2-a-modern-framework-for-adna-analysis/</link>
+      <pubDate>Mon, 15 Oct 2018 10:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/eager2-a-modern-framework-for-adna-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inferring genetic origins and phenotypic traits of George Bähr, the architect of the Dresden Frauenkirche</title>
+      <link>https://apeltzer.github.io/publication/08-baehr/</link>
+      <pubDate>Thu, 01 Feb 2018 00:00:00 +0100</pubDate>
+      <guid>https://apeltzer.github.io/publication/08-baehr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reconstructing Prehistoric African Population Structure</title>
+      <link>https://apeltzer.github.io/publication/07-african/</link>
+      <pubDate>Thu, 21 Sep 2017 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/publication/07-african/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genetic origins of the Minoans and Mycenaeans</title>
+      <link>https://apeltzer.github.io/publication/06-greeks/</link>
+      <pubDate>Wed, 02 Aug 2017 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/publication/06-greeks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ancient Egyptian mummy genomes suggest an increase of Sub-Saharan African ancestry in post-Roman periods</title>
+      <link>https://apeltzer.github.io/publication/05-mummies/</link>
+      <pubDate>Tue, 30 May 2017 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/publication/05-mummies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The genetic history of Ice Age Europe</title>
+      <link>https://apeltzer.github.io/publication/03-iceage/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/publication/03-iceage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EAGER: efficient ancient genome reconstruction</title>
+      <link>https://apeltzer.github.io/publication/02-eager/</link>
+      <pubDate>Thu, 31 Mar 2016 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/publication/02-eager/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

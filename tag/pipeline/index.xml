@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pipeline | Personal Homepage of Alex Peltzer</title>
+    <link>https://apeltzer.github.io/tag/pipeline/</link>
+      <atom:link href="https://apeltzer.github.io/tag/pipeline/index.xml" rel="self" type="application/rss+xml" />
+    <description>pipeline</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2021</copyright><lastBuildDate>Sat, 10 Dec 2016 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>pipeline</title>
+      <link>https://apeltzer.github.io/tag/pipeline/</link>
+    </image>
+    
+    <item>
+      <title>Lightweight virtualization using Docker</title>
+      <link>https://apeltzer.github.io/talk/lightweight-virtualization-using-docker/</link>
+      <pubDate>Sat, 10 Dec 2016 00:00:00 +0100</pubDate>
+      <guid>https://apeltzer.github.io/talk/lightweight-virtualization-using-docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EAGER: Efficient ancient genome Reconstruction</title>
+      <link>https://apeltzer.github.io/talk/eager-efficient-ancient-genome-reconstruction/</link>
+      <pubDate>Mon, 18 Jul 2016 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/eager-efficient-ancient-genome-reconstruction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EAGER: Efficient ancient genome Reconstruction</title>
+      <link>https://apeltzer.github.io/talk/eager-efficient-ancient-genome-reconstruction/</link>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/eager-efficient-ancient-genome-reconstruction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EAGER: Efficient ancient genome Reconstruction</title>
+      <link>https://apeltzer.github.io/talk/eager-efficient-ancient-genome-reconstruction/</link>
+      <pubDate>Mon, 13 Jul 2015 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/eager-efficient-ancient-genome-reconstruction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EAGER: Efficient ancient genome Reconstruction</title>
+      <link>https://apeltzer.github.io/talk/eager-efficient-ancient-genome-reconstruction/</link>
+      <pubDate>Mon, 03 Nov 2014 00:00:00 +0100</pubDate>
+      <guid>https://apeltzer.github.io/talk/eager-efficient-ancient-genome-reconstruction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EAGER: Efficient ancient genome Reconstruction</title>
+      <link>https://apeltzer.github.io/talk/eager-efficient-ancient-genome-reconstruction/</link>
+      <pubDate>Thu, 28 Aug 2014 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/eager-efficient-ancient-genome-reconstruction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EAGER: Efficient ancient genome Reconstruction</title>
+      <link>https://apeltzer.github.io/talk/eager-efficient-ancient-genome-reconstruction/</link>
+      <pubDate>Thu, 28 Aug 2014 00:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/talk/eager-efficient-ancient-genome-reconstruction/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

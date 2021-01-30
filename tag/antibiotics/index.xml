@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>antibiotics | Personal Homepage of Alex Peltzer</title>
+    <link>https://apeltzer.github.io/tag/antibiotics/</link>
+      <atom:link href="https://apeltzer.github.io/tag/antibiotics/index.xml" rel="self" type="application/rss+xml" />
+    <description>antibiotics</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2021</copyright><lastBuildDate>Mon, 05 Dec 2016 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>antibiotics</title>
+      <link>https://apeltzer.github.io/tag/antibiotics/</link>
+    </image>
+    
+    <item>
+      <title>Origin of modern syphilis and emergence of a pandemic Treponema pallidum cluster</title>
+      <link>https://apeltzer.github.io/publication/04-syphilis/</link>
+      <pubDate>Mon, 05 Dec 2016 00:00:00 +0100</pubDate>
+      <guid>https://apeltzer.github.io/publication/04-syphilis/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

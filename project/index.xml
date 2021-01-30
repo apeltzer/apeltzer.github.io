@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Personal Homepage of Alex Peltzer</title>
+    <link>https://apeltzer.github.io/project/</link>
+      <atom:link href="https://apeltzer.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>2021</copyright><lastBuildDate>Thu, 23 Aug 2018 14:00:00 +0200</lastBuildDate>
+    <image>
+      <url>https://apeltzer.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Projects</title>
+      <link>https://apeltzer.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title>nf-core</title>
+      <link>https://apeltzer.github.io/project/nfcore/</link>
+      <pubDate>Thu, 23 Aug 2018 14:00:00 +0200</pubDate>
+      <guid>https://apeltzer.github.io/project/nfcore/</guid>
+      <description>&lt;p&gt;Over at &lt;a href=&#34;https://nf-co.re&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nf-co.re&lt;/a&gt; we are working on solving one of the biggest issues in modern computational biology: How do we make the efforts to analyze various kinds of OMICs data reproducible and thus also accessible to everyone? In the age of &amp;ldquo;fake news&amp;rdquo;, science has to not only answer questions, but also provide means that their findings can be reproduced and not mistakenly used for other malicious or harmful activities. While doing malicious things with OMICs data is certainly hard to pursue, the good practice of making entire analysis procedures reproducible - even years later - remains the biggest motivators for the nf-core project. Our intention is to form a collaborative research platform to enable various bioinformatics researchers to benefit from know-how as generated in this project.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
