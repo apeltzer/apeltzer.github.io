@@ -3,8 +3,133 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc></loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/tag/16s/</loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/publication-type/2/</loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/tag/amplicon/</loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/tag/amplicon-sequencing/</loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/tag/environmental-omics/</loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/publication/17-ampliseq/</loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/</loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/publication_types/</loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/publication/</loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/tag/rrna/</loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/tags/</loc>
+    <lastmod>2020-10-23T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/tag/adna/</loc>
+    <lastmod>2020-10-01T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/tag/ancient-dna/</loc>
+    <lastmod>2020-10-01T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://apeltzer.github.io/tag/bioinformatics/</loc>
-    <lastmod>2020-09-02T15:30:00+02:00</lastmod>
+    <lastmod>2020-10-01T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/publication/18-damageprofiler/</loc>
+    <lastmod>2020-10-01T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/tag/data-analysis/</loc>
+    <lastmod>2020-10-01T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2020-10-01T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2020-10-01T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://apeltzer.github.io/tag/paleogenetics/</loc>
+    <lastmod>2020-10-01T00:00:00+02:00</lastmod>
   </url>
   
   <url>
@@ -33,11 +158,6 @@
   </url>
   
   <url>
-    <loc>https://apeltzer.github.io/</loc>
-    <lastmod>2020-09-02T15:30:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://apeltzer.github.io/event/</loc>
     <lastmod>2020-09-02T15:30:00+02:00</lastmod>
   </url>
@@ -53,23 +173,8 @@
   </url>
   
   <url>
-    <loc>https://apeltzer.github.io/tags/</loc>
-    <lastmod>2020-09-02T15:30:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://apeltzer.github.io/tag/workflows/</loc>
     <lastmod>2020-09-02T15:30:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc></loc>
-    <lastmod>2020-06-12T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apeltzer.github.io/publication-type/2/</loc>
-    <lastmod>2020-06-12T00:00:00+02:00</lastmod>
   </url>
   
   <url>
@@ -78,22 +183,12 @@
   </url>
   
   <url>
-    <loc>https://apeltzer.github.io/tag/ancient-dna/</loc>
-    <lastmod>2020-06-12T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc></loc>
     <lastmod>2020-06-12T00:00:00+02:00</lastmod>
   </url>
   
   <url>
     <loc></loc>
-    <lastmod>2020-06-12T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apeltzer.github.io/tag/data-analysis/</loc>
     <lastmod>2020-06-12T00:00:00+02:00</lastmod>
   </url>
   
@@ -123,31 +218,6 @@
   </url>
   
   <url>
-    <loc></loc>
-    <lastmod>2020-06-12T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apeltzer.github.io/tag/paleogenetics/</loc>
-    <lastmod>2020-06-12T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc></loc>
-    <lastmod>2020-06-12T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apeltzer.github.io/publication_types/</loc>
-    <lastmod>2020-06-12T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apeltzer.github.io/publication/</loc>
-    <lastmod>2020-06-12T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://apeltzer.github.io/publication/16-eager/</loc>
     <lastmod>2020-06-12T00:00:00+02:00</lastmod>
   </url>
@@ -160,11 +230,6 @@
   <url>
     <loc>https://apeltzer.github.io/talk/scalable-reproducible-bioinformatics-workflows-using-nextflow-nf-core/</loc>
     <lastmod>2020-04-03T09:30:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc></loc>
-    <lastmod>2020-03-26T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -283,52 +348,7 @@
   </url>
   
   <url>
-    <loc>https://apeltzer.github.io/tag/16s/</loc>
-    <lastmod>2019-12-19T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apeltzer.github.io/tag/amplicon/</loc>
-    <lastmod>2019-12-19T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apeltzer.github.io/tag/amplicon-sequencing/</loc>
-    <lastmod>2019-12-19T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc></loc>
-    <lastmod>2019-12-19T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apeltzer.github.io/tag/environmental-omics/</loc>
-    <lastmod>2019-12-19T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://apeltzer.github.io/publication/13-ampliseq/</loc>
-    <lastmod>2019-12-19T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc></loc>
-    <lastmod>2019-12-19T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc></loc>
-    <lastmod>2019-12-19T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apeltzer.github.io/tag/rrna/</loc>
-    <lastmod>2019-12-19T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc></loc>
     <lastmod>2019-12-19T00:00:00+01:00</lastmod>
   </url>
   
@@ -540,11 +560,6 @@
   <url>
     <loc>https://apeltzer.github.io/talk/nf-core-community-based-best-practice-pipeline-development-in-nextflow/</loc>
     <lastmod>2018-10-29T11:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://apeltzer.github.io/tag/adna/</loc>
-    <lastmod>2018-10-15T10:00:00+02:00</lastmod>
   </url>
   
   <url>
